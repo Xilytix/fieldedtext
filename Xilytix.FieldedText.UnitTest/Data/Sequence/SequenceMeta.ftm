@@ -1,0 +1,35 @@
+<FieldedText HeadingLineCount="1">
+  <Field Name="Root1_StrConst" FixedWidth="True" Constant="True" Value="T" Headings="ConstT"/>
+  <Field DataType="DateTime" Name="Root2_DateTime" FixedWidth="True" Width="10" HeadingPadCharType="Auto" ValueEndOfValueChar="|"/>
+  <Field DataType="Integer" Name="Root3_IntRedir"/>
+  <Field DataType="Decimal" Name="Level1_1_Decimal" FixedWidth="True" Width="12" ValuePadCharType="Specified" ValuePadChar="#"/>
+  <Field DataType="Float" Name="Level1_1_FloatRedir" FixedWidth="True" Width="10" ValuePadCharType="Auto"/>
+  <Field DataType="Boolean" Name="Level1_Null_Boolean" ValueQuotedType="Always"/>
+  <Field Name="Level1_1_String"/>
+  <Field DataType="DateTime" Name="Level1_2_DateTime" FixedWidth="True" Width="9" ValuePadCharType="Auto"/>
+  <Field Name="Level1_3_String"/>
+  <Field Name="Level2_10_String" ValueQuotedType="Always"/>
+  <Field Name="Level2_11_String"/>
+  <Sequence Name="Root">
+    <Item FieldIndex="0"/>
+    <Item FieldIndex="1"/>
+    <Item FieldIndex="2">
+      <Redirect SequenceName="Level1_Null" Type="Null" Value="0"/>
+      <Redirect SequenceName="Level1_1" Type="ExactInteger" InvokationDelay="AfterSequence" Value="1"/>
+      <Redirect SequenceName="Level1_2" Type="ExactInteger" Value="2"/>
+      <Redirect SequenceName="Level1_3" Type="ExactInteger" Value="3"/>
+    </Item>
+  </Sequence>
+  <Sequence Name="Level1_Null" FieldIndices="5"/>
+  <Sequence Name="Level1_1" FieldIndices="6">
+    <Item FieldIndex="3"/>
+    <Item FieldIndex="4">
+      <Redirect SequenceName="Level2_10" Type="ExactFloat" Value="10"/>
+      <Redirect SequenceName="Level2_11" Type="ExactFloat" InvokationDelay="AfterSequence" Value="11"/>
+    </Item>
+  </Sequence>
+  <Sequence Name="Level1_2" FieldIndices="7"/>
+  <Sequence Name="Level1_3" FieldIndices="8"/>
+  <Sequence Name="Level2_10" FieldIndices="9"/>
+  <Sequence Name="Level2_11" FieldIndices="10"/>
+</FieldedText>

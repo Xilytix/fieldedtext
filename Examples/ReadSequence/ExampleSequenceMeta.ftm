@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldedText>
+  <Field Name="Type" DataType="Integer" />
+  <Field Name="Name" Id="1" />
+  <Field Name="RunningSpeed" Id="2" DataType="Float" />
+  <Field Name="WalkDistance" Id="3" DataType="Float" />
+  <Field Name="Training" Id="4" DataType="Boolean" />
+  <Field Name="Trainer" Id="5" />
+  <Field Name="SessionCost" Id="6" DataType="Decimal" />
+  <Field Name="Color" Id="7" />
+  <Field Name="ChineseClassification" Id="8" />
+  <Sequence Name="Root" Root="True" FieldIndices="1">
+    <Item FieldIndex="0">
+      <Redirect SequenceName="Cat" InvokationDelay="AfterSequence" Value="1" />
+      <Redirect SequenceName="Dog" InvokationDelay="AfterSequence" Value="2" />
+      <Redirect SequenceName="GoldFish" InvokationDelay="AfterSequence" Value="3" />
+    </Item>
+  </Sequence>
+  <Sequence Name="Cat" FieldIndices="2" />
+  <Sequence Name="Dog">
+    <Item FieldIndex="3" />
+    <Item FieldIndex="2" />
+    <Item FieldIndex="4">
+      <Redirect SequenceName="Training" Value="True" />
+    </Item>
+  </Sequence>
+  <Sequence Name="GoldFish" FieldIndices="7,8" />
+  <Sequence Name="Training" FieldIndices="5,6" />
+</FieldedText>

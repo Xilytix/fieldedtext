@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldedText>
+  <Foreign1/>
+  <Foreign2 Stuff ="xx" />
+  <Foreign3 Stuff ="xx">yyy</Foreign3>
+  <Foreign4 Stuff ="xx">yyy
+    <Foreign5 Stuff2="gg">zz</Foreign5>
+  </Foreign4>
+  <Foreign6 Stuff ="t1">yyy
+    <Field Name="Foreign"/>
+    <Field Name="Foreign">
+      <Sequence />
+    </Field>
+  </Foreign6>
+  <Foreign7 Stuff ="z5">
+    yyy
+    <Foreign8 Stuff2="aa">bb</Foreign8>
+    <Field Name="Foreign"/>
+    <Field Name="Foreign">
+      <Sequence />
+    </Field>
+  </Foreign7>
+  <Field Name="" />
+  <Field Name="" Id="1" DataType="Integer" />
+  <Foreign1/>
+  <Foreign2 Stuff ="xx" />
+  <Foreign3 Stuff ="xx">yyy</Foreign3>
+  <Foreign4 Stuff ="xx">
+    yyy
+    <Foreign5 Stuff2="gg">zz</Foreign5>
+  </Foreign4>
+  <Foreign6 Stuff ="t1">
+    yyy
+    <Field Name="Foreign"/>
+    <Field Name="Foreign">
+      <Sequence />
+    </Field>
+  </Foreign6>
+  <Foreign7 Stuff ="z5">
+    yyy
+    <Foreign8 Stuff2="aa">bb</Foreign8>
+    <Field Name="Foreign"/>
+    <Field Name="Foreign">
+      <Sequence />
+    </Field>
+  </Foreign7>
+  <Field Name="" Id="2" DataType="Boolean" />
+  <Field Name="" Id="3" DataType="Float" />
+  <Field Name="" Id="4" DataType="Decimal" />
+  <Field Name="" Id="5" DataType="DateTime" />
+  <Field Name="" Id="6" DataType="Boolean" />
+  <Field Name="" Id="7" />
+  <Field Name="" Id="8" DataType="Integer" />
+  <Field Name="" Id="9" DataType="Boolean" />
+  <Field Name="" Id="10" DataType="Float" />
+  <Field Name="" Id="11" DataType="Decimal" />
+  <Sequence Name="" Root="True" FieldIndices="2">
+    <Foreign1/>
+    <Foreign2 Stuff ="xx" />
+    <Foreign3 Stuff ="xx">yyy</Foreign3>
+    <Foreign4 Stuff ="xx">
+      yyy
+      <Foreign5 Stuff2="gg">zz</Foreign5>
+    </Foreign4>
+    <Foreign6 Stuff ="t1">
+      yyy
+      <Field Name="Foreign"/>
+      <Field Name="Foreign">
+        <Sequence />
+      </Field>
+    </Foreign6>
+    <Foreign7 Stuff ="z5">
+      yyy
+      <Foreign8 Stuff2="aa">bb</Foreign8>
+      <Field Name="Foreign"/>
+      <Field Name="Foreign">
+        <Sequence />
+      </Field>
+    </Foreign7>
+    <Item FieldIndex="0" />
+    <Item FieldIndex="1">
+      <Foreign1/>
+      <Foreign2 Stuff ="xx" />
+      <Foreign3 Stuff ="xx">yyy</Foreign3>
+      <Foreign4 Stuff ="xx">
+        yyy
+        <Foreign5 Stuff2="gg">zz</Foreign5>
+      </Foreign4>
+      <Foreign6 Stuff ="t1">
+        yyy
+        <Field Name="Foreign"/>
+        <Field Name="Foreign">
+          <Sequence />
+        </Field>
+      </Foreign6>
+      <Foreign7 Stuff ="z5">
+        yyy
+        <Foreign8 Stuff2="aa">bb</Foreign8>
+        <Field Name="Foreign"/>
+        <Field Name="Foreign">
+          <Sequence />
+        </Field>
+      </Foreign7>
+      <Redirect SequenceName="Sequence1" InvokationDelay="AfterSequence" Value="1" />
+      <Redirect SequenceName="Sequence2" InvokationDelay="AfterSequence" Value="2" />
+      <Redirect SequenceName="Sequence3" InvokationDelay="AfterSequence" Value="3" />
+    </Item>
+  </Sequence>
+  <Sequence Name="Sequence1">
+    <Item FieldIndex="3" />
+    <Foreign1/>
+    <Foreign2 Stuff ="xx" />
+    <Foreign3 Stuff ="xx">yyy</Foreign3>
+    <Foreign4 Stuff ="xx">
+      yyy
+      <Foreign5 Stuff2="gg">zz</Foreign5>
+    </Foreign4>
+    <Foreign6 Stuff ="t1">
+      yyy
+      <Field Name="Foreign"/>
+      <Field Name="Foreign">
+        <Sequence />
+      </Field>
+    </Foreign6>
+    <Foreign7 Stuff ="z5">
+      yyy
+      <Foreign8 Stuff2="aa">bb</Foreign8>
+      <Field Name="Foreign"/>
+      <Field Name="Foreign">
+        <Sequence />
+      </Field>
+    </Foreign7>
+    <Item FieldIndex="4">
+      <Redirect SequenceName="Sequence4" Type="Null" />
+    </Item>
+  </Sequence>
+  <Sequence Name="Sequence2" FieldIndices="8">
+    <Item FieldIndex="5" />
+    <Item FieldIndex="6" />
+    <Item FieldIndex="7">
+      <Redirect SequenceName="Sequence4" Type="CaseInsensitiveString" Value="Go" />
+    </Item>
+  </Sequence>
+  <Sequence Name="Sequence3" FieldIndices="9" />
+  <Sequence Name="Sequence4" FieldIndices="10,11" />
+  <Foreign1/>
+  <Foreign2 Stuff ="xx" />
+  <Foreign3 Stuff ="xx">yyy</Foreign3>
+  <Foreign4 Stuff ="xx">
+    yyy
+    <Foreign5 Stuff2="gg">zz</Foreign5>
+  </Foreign4>
+  <Foreign6 Stuff ="t1">
+    yyy
+    <Field Name="Foreign"/>
+    <Field Name="Foreign">
+      <Sequence />
+    </Field>
+  </Foreign6>
+  <Foreign7 Stuff ="z5">
+    yyy
+    <Foreign8 Stuff2="aa">bb</Foreign8>
+    <Field Name="Foreign"/>
+    <Field Name="Foreign">
+      <Sequence />
+    </Field>
+  </Foreign7>
+</FieldedText>

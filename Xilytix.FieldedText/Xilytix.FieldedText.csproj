@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A003225-DA4A-4116-BF14-4DEE279122A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xilytix.FieldedText</RootNamespace>
+    <AssemblyName>Xilytix.FieldedText</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factory\BooleanFieldConstructor.cs" />
+    <Compile Include="Factory\BooleanSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\CaseInsensitiveStringSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\DateSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\DateTimeFieldConstructor.cs" />
+    <Compile Include="Factory\DecimalFieldConstructor.cs" />
+    <Compile Include="Factory\ExactDateTimeSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\ExactDecimalSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\ExactFloatSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\ExactIntegerSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\ExactStringSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\FieldConstructor.cs" />
+    <Compile Include="Factory\FieldFactory.cs" />
+    <Compile Include="Factory\FloatFieldConstructor.cs" />
+    <Compile Include="Factory\IntegerFieldConstructor.cs" />
+    <Compile Include="Factory\MetaConstructor.cs" />
+    <Compile Include="Factory\MetaFactory.cs" />
+    <Compile Include="Factory\NullSequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\SequenceConstructor.cs" />
+    <Compile Include="Factory\SequenceFactory.cs" />
+    <Compile Include="Factory\SequenceItemConstructor.cs" />
+    <Compile Include="Factory\SequenceItemFactory.cs" />
+    <Compile Include="Factory\SequenceRedirectConstructor.cs" />
+    <Compile Include="Factory\SequenceRedirectFactory.cs" />
+    <Compile Include="Factory\StringFieldConstructor.cs" />
+    <Compile Include="Factory\SubstitutionConstructor.cs" />
+    <Compile Include="Factory\SubstitutionFactory.cs" />
+    <Compile Include="FtAbortSerializationException.cs" />
+    <Compile Include="FtBooleanFieldDefinition.cs" />
+    <Compile Include="FtBooleanSequenceRedirect.cs" />
+    <Compile Include="FtCaseInsensitiveStringSequenceRedirect.cs" />
+    <Compile Include="FtDateSequenceRedirect.cs" />
+    <Compile Include="FtDateTimeFieldDefinition.cs" />
+    <Compile Include="FtDecimalFieldDefinition.cs" />
+    <Compile Include="FtExactDateTimeSequenceRedirect.cs" />
+    <Compile Include="FtExactDecimalSequenceRedirect.cs" />
+    <Compile Include="FtExactFloatSequenceRedirect.cs" />
+    <Compile Include="FtExactIntegerSequenceRedirect.cs" />
+    <Compile Include="FtExactStringSequenceRedirect.cs" />
+    <Compile Include="FtException.cs" />
+    <Compile Include="FtFieldDefinition.cs" />
+    <Compile Include="FtFieldDefinitionList.cs" />
+    <Compile Include="FtFieldHeadingReadyEventArgs.cs" />
+    <Compile Include="FtFloatFieldDefinition.cs" />
+    <Compile Include="FtGenericFieldDefinition.cs" />
+    <Compile Include="FtGenericMetaField.cs" />
+    <Compile Include="FtHeadingLineFinishedEventArgs.cs" />
+    <Compile Include="FtHeadingLineStartedEventArgs.cs" />
+    <Compile Include="FtIntegerFieldDefinition.cs" />
+    <Compile Include="FtInternalException.cs" />
+    <Compile Include="FtLastLineEndedType.cs" />
+    <Compile Include="FtNullMetaSequenceRedirect.cs" />
+    <Compile Include="FtNullSequenceRedirect.cs" />
+    <Compile Include="FtRecordFinishedEventArgs.cs" />
+    <Compile Include="FtRecordStartedEventArgs.cs" />
+    <Compile Include="FtSequence.cs" />
+    <Compile Include="FtSequenceInvokation.cs" />
+    <Compile Include="FtSequenceInvokationList.cs" />
+    <Compile Include="FtSequenceItem.cs" />
+    <Compile Include="FtSequenceItemList.cs" />
+    <Compile Include="FtSequenceList.cs" />
+    <Compile Include="FtSequenceRedirect.cs" />
+    <Compile Include="FtSequenceRedirectedEventArgs.cs" />
+    <Compile Include="FtSequenceRedirectList.cs" />
+    <Compile Include="FtStringFieldDefinition.cs" />
+    <Compile Include="FtSubstitution.cs" />
+    <Compile Include="FtSubstitutionList.cs" />
+    <Compile Include="FtWriterSettings.cs" />
+    <Compile Include="InternalError.cs" />
+    <Compile Include="Legacy.cs" />
+    <Compile Include="MetaSerialization\Formatting\LastLineEndedTypeFormatter.cs" />
+    <Compile Include="Serialization\CharReader.cs" />
+    <Compile Include="Serialization\DeclarationParser.cs" />
+    <Compile Include="Serialization\DeclaredParameters.cs" />
+    <Compile Include="FtFieldList.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization\DelimitedFieldParser.cs" />
+    <Compile Include="Serialization\EmbeddedMetaParser.cs" />
+    <Compile Include="Serialization\FieldParser.cs" />
+    <Compile Include="Serialization\FixedWidthFieldParser.cs" />
+    <Compile Include="Serialization\Formatting\BooleanFieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\DateTimeFieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\DecimalFieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\DeclaredParametersFormatter.cs" />
+    <Compile Include="Serialization\Formatting\FieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\FloatFieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\IntegerFieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\NumberFieldFormatter.cs" />
+    <Compile Include="Serialization\Formatting\StringFieldFormatter.cs" />
+    <Compile Include="FtBooleanField.cs" />
+    <Compile Include="FtBooleanMetaField.cs" />
+    <Compile Include="FtBooleanMetaSequenceRedirect.cs" />
+    <Compile Include="FtBooleanStyles.cs" />
+    <Compile Include="FtCaseInsensitiveStringMetaSequenceRedirect.cs" />
+    <Compile Include="FtCommaText.cs" />
+    <Compile Include="FtDateMetaSequenceRedirect.cs" />
+    <Compile Include="FtDateTimeField.cs" />
+    <Compile Include="FtDateTimeMetaField.cs" />
+    <Compile Include="FtDecimalField.cs" />
+    <Compile Include="FtDecimalMetaField.cs" />
+    <Compile Include="FtEndOfLineAutoWriteType.cs" />
+    <Compile Include="FtEndOfLineType.cs" />
+    <Compile Include="FtExactDateTimeMetaSequenceRedirect.cs" />
+    <Compile Include="FtExactDecimalMetaSequenceRedirect.cs" />
+    <Compile Include="FtExactFloatMetaSequenceRedirect.cs" />
+    <Compile Include="FtExactIntegerMetaSequenceRedirect.cs" />
+    <Compile Include="FtExactStringMetaSequenceRedirect.cs" />
+    <Compile Include="FtField.cs" />
+    <Compile Include="FtFloatField.cs" />
+    <Compile Include="FtFloatMetaField.cs" />
+    <Compile Include="FtGenericField.cs" />
+    <Compile Include="FtHeadingConstraint.cs" />
+    <Compile Include="FtIntegerField.cs" />
+    <Compile Include="FtIntegerMetaField.cs" />
+    <Compile Include="FtLineType.cs" />
+    <Compile Include="FtMeta.cs" />
+    <Compile Include="FtMetaField.cs" />
+    <Compile Include="FtMetaFieldList.cs" />
+    <Compile Include="FtMetaReferenceType.cs" />
+    <Compile Include="FtMetaSequence.cs" />
+    <Compile Include="FtMetaSerializationException.cs" />
+    <Compile Include="FtPadAlignment.cs" />
+    <Compile Include="FtPadCharType.cs" />
+    <Compile Include="FtQuotedType.cs" />
+    <Compile Include="FtReadRecordResult.cs" />
+    <Compile Include="FtMetaSequenceItem.cs" />
+    <Compile Include="FtSequenceInvokationDelay.cs" />
+    <Compile Include="FtMetaSequenceItemList.cs" />
+    <Compile Include="FtMetaSequenceList.cs" />
+    <Compile Include="FtMetaSequenceRedirect.cs" />
+    <Compile Include="FtMetaSequenceRedirectList.cs" />
+    <Compile Include="FtMetaSerializer.cs" />
+    <Compile Include="FtMetaSubstitution.cs" />
+    <Compile Include="FtSerializationError.cs" />
+    <Compile Include="FtStandardDataType.cs" />
+    <Compile Include="FtStandardSequenceRedirectType.cs" />
+    <Compile Include="FtStandardText.cs" />
+    <Compile Include="FtMetaSubstitutionList.cs" />
+    <Compile Include="FtReader.cs" />
+    <Compile Include="FtSerializationException.cs" />
+    <Compile Include="FtSerializer.cs" />
+    <Compile Include="FtStringField.cs" />
+    <Compile Include="FtStringMetaField.cs" />
+    <Compile Include="FtSubstitutionType.cs" />
+    <Compile Include="FtTruncateType.cs" />
+    <Compile Include="FtWriter.cs" />
+    <Compile Include="MetaSerialization\FieldedTextReadElement.cs" />
+    <Compile Include="MetaSerialization\FieldReadElement.cs" />
+    <Compile Include="MetaSerialization\Formatting\BooleanStylesFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\DataTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\DateTimeStylesFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\EndOfLineAutoWriteTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\EndOfLineTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\FieldPropertyIdFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\HeadingConstraintFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\MetaElementTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\MetaReferenceTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\NumberStylesFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\PadAlignmentFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\PadCharTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\QuotedTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\RootPropertyIdFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SequenceInvokationDelayFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SequenceItemPropertyIdFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SequencePropertyIdFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SequenceRedirectPropertyIdFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SequenceRedirectTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SubstitutionPropertyIdFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\SubstitutionTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\Formatting\TruncateTypeFormatter.cs" />
+    <Compile Include="MetaSerialization\ImplicitExplicitIndexSorter.cs" />
+    <Compile Include="MetaSerialization\MetaElementType.cs" />
+    <Compile Include="MetaSerialization\MetaSerializationBase.cs" />
+    <Compile Include="MetaSerialization\MetaSerializationDefaults.cs" />
+    <Compile Include="MetaSerialization\ReadElement.cs" />
+    <Compile Include="MetaSerialization\SequenceItemReadElement.cs" />
+    <Compile Include="MetaSerialization\SequenceReadElement.cs" />
+    <Compile Include="MetaSerialization\SequenceRedirectReadElement.cs" />
+    <Compile Include="MetaSerialization\SubstitutionReadElement.cs" />
+    <Compile Include="MetaSerialization\XmlMetaSerializationReader.cs" />
+    <Compile Include="MetaSerialization\XmlMetaSerializationWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FtFieldValueReadyEventArgs.cs" />
+    <Compile Include="Serialization\HeadingLineRecordParser.cs" />
+    <Compile Include="Serialization\LineParser.cs" />
+    <Compile Include="Serialization\SerializationCore.cs" />
+    <Compile Include="Serialization\SerializationReader.cs" />
+    <Compile Include="Serialization\SerializationWriter.cs" />
+    <Compile Include="Test\InternalTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

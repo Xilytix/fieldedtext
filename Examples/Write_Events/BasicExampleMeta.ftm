@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldedText HeadingLineCount="2">
+  <Field Name="PetName" Id="1"/>
+  <Field DataType="Float" Name="Age" Id="2"/>
+  <Field Name="Color" Id="3"/>
+  <Field DataType="DateTime" Name="DateReceived" Id="4" Format="d MMM yyyy" />
+  <Field DataType="Decimal" Name="Price" Id="5"/>
+  <Field DataType="Boolean" Name="NeedsWalking" Id="6"/>
+  <Field Name="Type" Id="7"/>
+</FieldedText>

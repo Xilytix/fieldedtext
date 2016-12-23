@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Paul Klink</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://en.wikipedia.org/wiki/Public-domain_software</licenseUrl>
+    <projectUrl>http://www.xilytix.com/fieldedtext/csharplibrary/</projectUrl>
+    <iconUrl>http://www.xilytix.com/fieldedtext/csharplibrary/FieldedText-64x64x32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Added
+  - SerializationCore.GetOrdinal(int fieldId) Finds field ordinal using field Id
+Fixed
+  - SerializationCore.GetOrdinal(string name) now throws exception if field not found.
+      Use SerializationCore.FieldList.IndexOfField() to return error instead of throwing
+      exception.
+  - FtMetaSerializer.Serialize(..., XmlWriterSettings) was ignoring XmlWriterSettings
+
+Code examples can be viewed at:
+  http://www.xilytix.com/fieldedtext/csharplibrary/examples</releaseNotes>
+    <copyright>Public Domain</copyright>
+    <tags>Fielded Text CSV parser serializer Fixed Width Field tabulated structured reader writer meta</tags>
+  </metadata>
+  <files>
+    <file src="readme.txt" target="" />
+  </files>
+</package>

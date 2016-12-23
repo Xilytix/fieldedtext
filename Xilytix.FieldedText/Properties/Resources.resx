@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FieldedTextReadElement_ResolveAllowEndOfLineCharInQuotes_Invalid" xml:space="preserve">
+    <value>Invalid AllowEndOfLineCharInQuotes: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveCulture_Invalid" xml:space="preserve">
+    <value>Invalid Culture Name: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveDelimiterChar_Invalid" xml:space="preserve">
+    <value>Invalid DelimiterChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveEndOfLineAutoWriteType_Invalid" xml:space="preserve">
+    <value>Invalid EndOfLineAutoWriteType: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveEndOfLineChar_Invalid" xml:space="preserve">
+    <value>Invalid EndOfLineChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveLastLineEndedType_Invalid" xml:space="preserve">
+    <value>Invalid LastLineEndedType: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveEndOfLineType_Invalid" xml:space="preserve">
+    <value>Invalid EndOfLineType: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveFields_DuplicateExplicitIndexInFields" xml:space="preserve">
+    <value>Duplicate explicit index in fields: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingAlwaysWriteOptionalQuote_Invalid" xml:space="preserve">
+    <value>Invalid HeadingAlwaysWriteOptionalQuote: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingConstraint_Invalid" xml:space="preserve">
+    <value>Invalid HeadingConstraint: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingEndOfValueChar_Invalid" xml:space="preserve">
+    <value>Invalid HeadingEndOfValueChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingLineCount_Invalid" xml:space="preserve">
+    <value>Invalid HeadingLineCount: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingPadAlignment_Invalid" xml:space="preserve">
+    <value>Invalid HeadingPadAlignment: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingPadCharType_Invalid" xml:space="preserve">
+    <value>Invalid HeadingPadCharType: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingPadChar_Invalid" xml:space="preserve">
+    <value>Invalid HeadingPadChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingQuotedType_Invalid" xml:space="preserve">
+    <value>Invalid HeadingQuotedType: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingTruncateChar_Invalid" xml:space="preserve">
+    <value>Invalid HeadingTruncateChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingTruncateType_Invalid" xml:space="preserve">
+    <value>Invalid HeadingTruncateType: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveHeadingWritePrefixSpace_Invalid" xml:space="preserve">
+    <value>Invalid HeadingWritePrefixSpace: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveIgnoreBlankLines_Invalid" xml:space="preserve">
+    <value>Invalid IgnoreBlankLines: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveIgnoreExtraChars_Invalid" xml:space="preserve">
+    <value>Invalid IgnoreExtraChars: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveAllowIncompleteRecords_Invalid" xml:space="preserve">
+    <value>Invalid AllowIncompleteRecords: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveLineCommentChar_Invalid" xml:space="preserve">
+    <value>Invalid LineCommentChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveMainHeadingLineIndex_Invalid" xml:space="preserve">
+    <value>Invalid MainHeadingLineIndex: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveQuoteChar_Invalid" xml:space="preserve">
+    <value>Invalid QuoteChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveStuffedEmbeddedQuotes_Invalid" xml:space="preserve">
+    <value>Invalid StuffedEmbeddedQuotes: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveSubstitutionChar_Invalid" xml:space="preserve">
+    <value>Invalid SubstitutionChar: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveSubstitutionsEnabled_Invalid" xml:space="preserve">
+    <value>Invalid SubstitutionsEnabled: "{0}"</value>
+  </data>
+  <data name="FieldFactory_GetName_NoConstructorForDataType" xml:space="preserve">
+    <value>No field constructor registered for DataType: {0}</value>
+  </data>
+  <data name="FieldFactory_RegisterConstructor_NameAlreadyRegistered" xml:space="preserve">
+    <value>Field constructor with DataType name "{0}" already registered.</value>
+  </data>
+  <data name="FieldFactory_RegisterConstructor_TypeAlreadyRegistered" xml:space="preserve">
+    <value>Field constructor with DataType "{0}" already registered.</value>
+  </data>
+  <data name="SequenceRedirectFactory_GetName_NoConstructorForType" xml:space="preserve">
+    <value>No SequenceRedirect constructor registered for type: {0}</value>
+  </data>
+  <data name="SequenceRedirectFactory_RegisterConstructor_NameAlreadyRegistered" xml:space="preserve">
+    <value>SequenceRedirect constructor with type name "{0}" already registered</value>
+  </data>
+  <data name="SequenceRedirectFactory_RegisterConstructor_TypeAlreadyRegistered" xml:space="preserve">
+    <value>SequenceRedirect constructor with type "{0}" already registered</value>
+  </data>
+  <data name="FieldReadElement_ResolveBooleanStyles_Invalid" xml:space="preserve">
+    <value>Invalid Boolean field styles: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveBooleanValue_Invalid" xml:space="preserve">
+    <value>Invalid Boolean field value: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveBooleanValue_Missing" xml:space="preserve">
+    <value>Missing Boolean value field : "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveConstant_Invalid" xml:space="preserve">
+    <value>Invalid field constant: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveDateTimeStyles_Invalid" xml:space="preserve">
+    <value>Invalid DateTime field styles: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveDateTimeValue_Invalid" xml:space="preserve">
+    <value>Invalid DateTime field value: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveDateTimeValue_Missing" xml:space="preserve">
+    <value>Missing DateTime value field : "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveDecimalStyles_Invalid" xml:space="preserve">
+    <value>Invalid Decimal field styles: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveDecimalValue_Invalid" xml:space="preserve">
+    <value>Invalid Decimal field value: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveDecimalValue_Missing" xml:space="preserve">
+    <value>Missing Decimal value field : "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveFixedWidth_Invalid" xml:space="preserve">
+    <value>Invalid field FixedWidth: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveFloatStyles_Invalid" xml:space="preserve">
+    <value>Invalid Float field styles: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveFloatValue_Invalid" xml:space="preserve">
+    <value>Invalid Float field value: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveFloatValue_Missing" xml:space="preserve">
+    <value>Missing Float value field : "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingAlwaysWriteOptionalQuote_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingAlwaysWriteOptionalQuote: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingConstraint_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingConstraint: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingEndOfValueChar_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingEndOfValueChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingPadAlignment_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingPadAlignment: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingPadCharType_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingPadCharType: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingPadChar_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingPadChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingQuotedType_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingQuotedType: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingTruncateChar_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingTruncateChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingTruncateType_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingTruncateType: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadingWritePrefixSpace_Invalid" xml:space="preserve">
+    <value>Invalid field HeadingWritePrefixSpace: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveId_Invalid" xml:space="preserve">
+    <value>Invalid field Id: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveIntegerStyles_Invalid" xml:space="preserve">
+    <value>Invalid Integer field styles: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveIntegerValue_Invalid" xml:space="preserve">
+    <value>Invalid Integer field value: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveIntegerValue_Missing" xml:space="preserve">
+    <value>Missing Integer value field : "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveNull_Invalid" xml:space="preserve">
+    <value>Invalid field Null: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveStringValue_Missing" xml:space="preserve">
+    <value>Missing String value field : "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueAlwaysWriteOptionalQuote_Invalid" xml:space="preserve">
+    <value>Invalid field ValueAlwaysWriteOptionalQuote: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueEndOfValueChar_Invalid" xml:space="preserve">
+    <value>Invalid field ValueEndOfValueChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueNullChar_Invalid" xml:space="preserve">
+    <value>Invalid field ValueNullChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValuePadAlignment_Invalid" xml:space="preserve">
+    <value>Invalid field ValuePadAlignment: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValuePadCharType_Invalid" xml:space="preserve">
+    <value>Invalid field ValuePadCharType: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValuePadChar_Invalid" xml:space="preserve">
+    <value>Invalid field ValuePadChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueQuotedType_Invalid" xml:space="preserve">
+    <value>Invalid field ValueQuotedType: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueTruncateChar_Invalid" xml:space="preserve">
+    <value>Invalid field ValueTruncateChar: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueTruncateType_Invalid" xml:space="preserve">
+    <value>Invalid field ValueTruncateType: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveValueWritePrefixSpace_Invalid" xml:space="preserve">
+    <value>Invalid field ValueWritePrefixSpace: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveWidth_Invalid" xml:space="preserve">
+    <value>Invalid field Width: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_TryAddOrIgnoreAttribute_InvalidFieldDataType" xml:space="preserve">
+    <value>Invalid field DataType</value>
+  </data>
+  <data name="FieldReadElement_TryAddOrIgnoreAttribute_InvalidFieldIndex" xml:space="preserve">
+    <value>Invalid field Index</value>
+  </data>
+  <data name="SequenceItemReadElement_ResolveFieldIndex_Invalid" xml:space="preserve">
+    <value>Invalid sequence item field index: "{0}"</value>
+  </data>
+  <data name="SequenceItemReadElement_ResolveFieldIndex_Missing" xml:space="preserve">
+    <value>Sequence item missing field Index.</value>
+  </data>
+  <data name="SequenceItemReadElement_ResolveFieldIndex_OutOfRange" xml:space="preserve">
+    <value>Sequence item field index out of range: "{0}"</value>
+  </data>
+  <data name="SequenceItemReadElement_ResolveRedirects_DuplicateExplicitIndex" xml:space="preserve">
+    <value>Sequence item sequence redirects have duplicate explicit index: {0}</value>
+  </data>
+  <data name="SequenceItemReadElement_TryAddOrIgnoreAttribute_Invalid" xml:space="preserve">
+    <value>Invalid sequence item index: "{0}"</value>
+  </data>
+  <data name="SequenceReadElement_ResolveFieldIndices_Invalid" xml:space="preserve">
+    <value>Invalid sequence field indices: "{0}"</value>
+  </data>
+  <data name="SequenceReadElement_ResolveItemsTo_DuplicateExplicitIndex" xml:space="preserve">
+    <value>Sequence items have duplicate explicit index: "{0}"</value>
+  </data>
+  <data name="SequenceReadElement_ResolveName_Duplicate" xml:space="preserve">
+    <value>Duplicate sequence name: "{0}"</value>
+  </data>
+  <data name="SequenceReadElement_ResolveName_Missing" xml:space="preserve">
+    <value>Sequence missing name</value>
+  </data>
+  <data name="SequenceReadElement_ResolveRoot_Invalid" xml:space="preserve">
+    <value>Invalid sequence root: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveBooleanValue_Invalid" xml:space="preserve">
+    <value>Invalid Boolean sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveBooleanValue_Missing" xml:space="preserve">
+    <value>Boolean sequence redirect missing value. Redirect type: "{0}" </value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveCaseInsensitiveStringValue_Invalid" xml:space="preserve">
+    <value>Invalid CaseInsensitiveString sequence Redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveCaseInsensitiveStringValue_Missing" xml:space="preserve">
+    <value>CaseInsensitiveString sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveDateValue_Invalid" xml:space="preserve">
+    <value>Invalid Date sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveDateValue_Missing" xml:space="preserve">
+    <value>Date sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactDateTimeValue_Invalid" xml:space="preserve">
+    <value>Invalid ExactDateTime sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactDateTimeValue_Missing" xml:space="preserve">
+    <value>ExactDateTime sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactDecimalValue_Invalid" xml:space="preserve">
+    <value>Invalid ExactDecimal sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactDecimalValue_Missing" xml:space="preserve">
+    <value>ExactDecimal sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactFloatValue_Invalid" xml:space="preserve">
+    <value>Invalid ExactFloat sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactFloatValue_Missing" xml:space="preserve">
+    <value>ExactFloat sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactIntegerValue_Invalid" xml:space="preserve">
+    <value>Invalid ExactInteger sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactIntegerValue_Missing" xml:space="preserve">
+    <value>ExactInteger sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactStringValue_Invalid" xml:space="preserve">
+    <value>Invalid ExactString sequence redirect value: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveExactStringValue_Missing" xml:space="preserve">
+    <value>ExactString sequence redirect missing value. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveInvokationDelay_Invalid" xml:space="preserve">
+    <value>Invalid sequence redirect invokation delay: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveSequenceName_Missing" xml:space="preserve">
+    <value>Sequence redirect missing sequence name. Redirect type: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_ResolveSequenceName_NotExist" xml:space="preserve">
+    <value>Sequence redirect specifies sequence name which does not exist. Name "{0}". Redirect Type "{1}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_TryAddOrIgnoreAttribute_InvalidIndex" xml:space="preserve">
+    <value>Invalid sequence redirect index: "{0}"</value>
+  </data>
+  <data name="SequenceRedirectReadElement_TryAddOrIgnoreAttribute_InvalidType" xml:space="preserve">
+    <value>Invalid sequence redirect type: "{0}"</value>
+  </data>
+  <data name="SubstitutionReadElement_ResolveToken_Invalid" xml:space="preserve">
+    <value>Invalid substitution token: "{0}"</value>
+  </data>
+  <data name="SubstitutionReadElement_ResolveToken_Missing" xml:space="preserve">
+    <value>Substitution missing token. Type: "{0}"</value>
+  </data>
+  <data name="SubstitutionReadElement_ResolveType_Invalid" xml:space="preserve">
+    <value>Invalid substitution type: "{0}"</value>
+  </data>
+  <data name="SubstitutionReadElement_ResolveValue_MissingForString" xml:space="preserve">
+    <value>String substitution missing value. Token: "{0}"</value>
+  </data>
+  <data name="XmlMetaSerializationReader_Read_AttributeError" xml:space="preserve">
+    <value>Attribute Error. Name: "{0}" Value: "{1}" Description: "{2}"</value>
+  </data>
+  <data name="XmlMetaSerializationReader_Read_IncompleteXmlStream" xml:space="preserve">
+    <value>Incomplete XML stream.</value>
+  </data>
+  <data name="BooleanFieldFormatter_Parse_NoMatch" xml:space="preserve">
+    <value>Boolean Text "{0}" does not match True or False text.</value>
+  </data>
+  <data name="DateTimeFieldFormatter_ToText_ArgumentOutOfRange" xml:space="preserve">
+    <value>DateTime formatting error: {0}</value>
+  </data>
+  <data name="DateTimeFieldFormatter_ToText_Format" xml:space="preserve">
+    <value>DateTime formatting error: {0}</value>
+  </data>
+  <data name="DateTimeFieldFormatter_Parse_Invalid" xml:space="preserve">
+    <value>Invalid DateTime value: "{0}"</value>
+  </data>
+  <data name="DecimalFieldFormatter_ToText_Format" xml:space="preserve">
+    <value>Decimal formatting error: {0}</value>
+  </data>
+  <data name="DecimalFieldFormatter_Parse_Invalid" xml:space="preserve">
+    <value>Invalid Decimal value: "{0}"</value>
+  </data>
+  <data name="FloatFieldFormatter_ToText_Format" xml:space="preserve">
+    <value>Float formatting error: {0}</value>
+  </data>
+  <data name="FloatFieldFormatter_Parse_Invalid" xml:space="preserve">
+    <value>Invalid Float value: "{0}"</value>
+  </data>
+  <data name="FtCommaText_Parse_Format" xml:space="preserve">
+    <value>FtCommaText parse error: {0}</value>
+  </data>
+  <data name="FtCommaText_TryParse_InvalidInteger" xml:space="preserve">
+    <value>Invalid Integer.  Element: [{0}]: "{1}" </value>
+  </data>
+  <data name="FtCommaText_TryParse_QuotesNotClosedInLastElement" xml:space="preserve">
+    <value>Quotes not closed in last element.</value>
+  </data>
+  <data name="FtCommaText_TryParse_UnexpectedCharAfterQuotedElement" xml:space="preserve">
+    <value>Unexpected character after quoted element.  Position: {0}</value>
+  </data>
+  <data name="FtDataReader_GetBytes_NotSupported" xml:space="preserve">
+    <value>DataReader.GetBytes not supported.</value>
+  </data>
+  <data name="FtDataReader_GetByte_NotSupported" xml:space="preserve">
+    <value>DataReader.GetByte not supported.</value>
+  </data>
+  <data name="FtDataReader_GetChars_NotSupported" xml:space="preserve">
+    <value>DataReader.GetChars not supported.</value>
+  </data>
+  <data name="FtDataReader_GetChar_NotSupported" xml:space="preserve">
+    <value>DataReader.GetChar not supported.</value>
+  </data>
+  <data name="FtDataReader_GetData_NotSupported" xml:space="preserve">
+    <value>DataReader.GetData not supported.</value>
+  </data>
+  <data name="FtDataReader_GetGuid_NotSupported" xml:space="preserve">
+    <value>DataReader.GetGuid not supported.</value>
+  </data>
+  <data name="IntegerFieldFormatter_ToText_Format" xml:space="preserve">
+    <value>Integer formatting error: {0}</value>
+  </data>
+  <data name="IntegerFieldFormatter_Parse_Invalid" xml:space="preserve">
+    <value>Invalid integer value: "{0}"</value>
+  </data>
+  <data name="SerializationReader_GetField_IndexOutOfRange" xml:space="preserve">
+    <value>Field "{0}" not found.</value>
+  </data>
+  <data name="FtStandardDataType_ToName_InvalidType" xml:space="preserve">
+    <value>Invalid standard DataType: {0}</value>
+  </data>
+  <data name="FtStandardSequenceRedirectType_ToName_InvalidType" xml:space="preserve">
+    <value>Invalid standard SequenceRedirectType: {0}</value>
+  </data>
+  <data name="FtStandardText_ParseBoolean_Invalid" xml:space="preserve">
+    <value>Invalid standard Boolean text: "{0}"</value>
+  </data>
+  <data name="FtStandardText_ParseChar_Invalid" xml:space="preserve">
+    <value>Invalid standard Char text: "{0}"</value>
+  </data>
+  <data name="FtStandardText_ParseDateTime_Invalid" xml:space="preserve">
+    <value>Invalid standard DateTime text: "{0}"</value>
+  </data>
+  <data name="FtStandardText_ParseDecimal_Invalid" xml:space="preserve">
+    <value>Invalid standard Decimal text: "{0}"</value>
+  </data>
+  <data name="FtStandardText_ParseFloat_Invalid" xml:space="preserve">
+    <value>Invalid standard Float text: "{0}"</value>
+  </data>
+  <data name="FtStandardText_ParseInt32_Invalid" xml:space="preserve">
+    <value>Invalid standard Int32 text: "{0}"</value>
+  </data>
+  <data name="FtStandardText_ParseInteger_Invalid" xml:space="preserve">
+    <value>Invalid standard Integer text: "{0}"</value>
+  </data>
+  <data name="FieldReadElement_ResolveHeadings_Invalid" xml:space="preserve">
+    <value>Invalid field Headings: {0}</value>
+  </data>
+  <data name="SerializationWriter_WriteHeader_HeaderAlreadyWritten" xml:space="preserve">
+    <value>Header already written.</value>
+  </data>
+  <data name="DeclaredParametersFormatter_ExtractValue_ParameterIsMissingValue" xml:space="preserve">
+    <value>Parameter "{0}" is missing value.  Position: {1}</value>
+  </data>
+  <data name="DeclaredParametersFormatter_ExtractValue_ValueForParameterIsMissingClosingQuote" xml:space="preserve">
+    <value>Value for parameter "{0}" is missing closing quote.  Position: {1}</value>
+  </data>
+  <data name="DeclaredParametersFormatter_ExtractValue_ValueForParameterIsNotQuoted" xml:space="preserve">
+    <value>Value for parameter "{0}" is not quoted.  Position: {1}</value>
+  </data>
+  <data name="DeclaredParametersFormatter_ToText_NameContainsSeparatorCharacter" xml:space="preserve">
+    <value>Declared parameter name cannot contain separator character: "{0}"</value>
+  </data>
+  <data name="DeclaredParametersFormatter_TryParse_ParameterMissingSeparator" xml:space="preserve">
+    <value>Parameter missing separator.  Position: {0}</value>
+  </data>
+  <data name="FtField_TruncateText_TextTruncation" xml:space="preserve">
+    <value>Text truncation: "{0}"</value>
+  </data>
+  <data name="FtField_LoadNullValue_ConstantNonNullValueExpected" xml:space="preserve">
+    <value>Expected constant non null value but loaded null value .</value>
+  </data>
+  <data name="FtGenericField_LoadNonNullValue_ConstantValueMismatch" xml:space="preserve">
+    <value>Constant value mismatch: {0}</value>
+  </data>
+  <data name="FtGenericField_LoadNonNullValue_ConstantNullValueExpected" xml:space="preserve">
+    <value>Expected constant null value but loaded non null value : {0}</value>
+  </data>
+  <data name="SerializationReader_ParseChar_BlankRecordsNotAllowed" xml:space="preserve">
+    <value>Blank records not allowed.</value>
+  </data>
+  <data name="FixedWidthFieldParser_FinishText_ValueWidthExceeded" xml:space="preserve">
+    <value>Value width exceeded. Expected: {0} Actual: {1}</value>
+  </data>
+  <data name="FixedWidthFieldParser_FinishText_ValueWidthNotReached" xml:space="preserve">
+    <value>Value width not reached. Expected: {0} Actual: {1}</value>
+  </data>
+  <data name="SerializationReader_ParseChar_EmbeddedMetaLineNotBlankOrComment" xml:space="preserve">
+    <value>Embedded meta line not blank or comment.</value>
+  </data>
+  <data name="FtField_LoadDelimitedValue_Prefix" xml:space="preserve">
+    <value>Load delimited value error: {0}</value>
+  </data>
+  <data name="FtField_LoadFixedWidthValue_Prefix" xml:space="preserve">
+    <value>Load fixed width value Error: {0}</value>
+  </data>
+  <data name="FtField_SetAsNonNullValueText_Prefix" xml:space="preserve">
+    <value>Set ValueText error: {0}</value>
+  </data>
+  <data name="HeadingLineRecordParser_ParseChar_HeadingLineTooManyFields" xml:space="preserve">
+    <value>Heading line has too many fields. Maximum: {0}</value>
+  </data>
+  <data name="DelimitedFieldParser_ParseChar_HeadingNonWhiteSpaceCharAfterQuotesClosed" xml:space="preserve">
+    <value>Non white space character in field heading after quotes closed.</value>
+  </data>
+  <data name="DelimitedFieldParser_ParseChar_HeadingNonWhiteSpaceCharBeforeQuotesOpened" xml:space="preserve">
+    <value>Non white space character in always quoted field heading before quotes opened.</value>
+  </data>
+  <data name="InternalExceptionMessage" xml:space="preserve">
+    <value>"Internal error: {0} Member: \"{1}\" File: \"{2}\" Line: {3}</value>
+  </data>
+  <data name="FtField_LoadHeading_AllConstantViolation" xml:space="preserve">
+    <value>All constant violation. Index: {0}</value>
+  </data>
+  <data name="FtField_LoadHeading_MainConstantViolation" xml:space="preserve">
+    <value>Main constant violation</value>
+  </data>
+  <data name="FtField_LoadHeading_NameConstantViolation" xml:space="preserve">
+    <value>Name constant violation</value>
+  </data>
+  <data name="LineParser_FinishLastLine_AlwaysEndedButIn" xml:space="preserve">
+    <value>Last line not ended.</value>
+  </data>
+  <data name="LineParser_FinishLastLine_NeverEndedButOut" xml:space="preserve">
+    <value>Last line ended.</value>
+  </data>
+  <data name="SerializationReader_Finish_DeclarationMissingSecondLine" xml:space="preserve">
+    <value>Missing second line.</value>
+  </data>
+  <data name="FtGenericField_GetValueOrThrowNull_AttemptToGetValueFromNullField" xml:space="preserve">
+    <value>Null value in field: "{0}"</value>
+  </data>
+  <data name="FixedWidthFieldParser_FinishText_HeadingWidthExceeded" xml:space="preserve">
+    <value>Heading width exceeded. Expected: {0} Actual: {1}</value>
+  </data>
+  <data name="FixedWidthFieldParser_FinishText_HeadingWidthNotReached" xml:space="preserve">
+    <value>Heading width not reached. Expected: {0} Actual: {1}</value>
+  </data>
+  <data name="DelimitedFieldParser_ParseChar_ValueNonWhiteSpaceCharAfterQuotesClosed" xml:space="preserve">
+    <value>Non white space character in field value after quotes closed.</value>
+  </data>
+  <data name="DelimitedFieldParser_ParseChar_ValueNonWhiteSpaceCharBeforeQuotesOpened" xml:space="preserve">
+    <value>Non white space character in always quoted field value before quotes opened.</value>
+  </data>
+  <data name="HeadingLineRecordParser_ParseChar_RecordTooManyFields" xml:space="preserve">
+    <value>Record has too many fields. Maximum: {0}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_HeadingEndOfValueCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") HeadingEndOfValueChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_HeadingPadCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") HeadingPadChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_HeadingTruncateCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") HeadingTruncateChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_ValueEndOfValueCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") ValueEndOfValueChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_ValueNullCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") ValueNullChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_ValuePadCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") ValuePadChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMetaField_ValidateEndOfLineTypeChar_ValueTruncateCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: FixedWidth field ("{0}") ValueTruncateChar cannot be same as end of line char: {1}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_DelimiterCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: DelimiterChar cannot be same as end of line char: {0}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_HeadingEndOfValueCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: If HeadingLineCount &gt; 0, HeadingEndOfValueChar cannot be same as end of line char: {0}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_HeadingPadCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: If HeadingLineCount &gt; 0, HeadingPadChar cannot be same as end of line char: {0}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_HeadingTruncateCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: If HeadingLineCount &gt; 0, HeadingTruncateChar cannot be same as end of line char: {0}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_LineCommentCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: LineCommentChar cannot be same as end of line char : {0}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_QuoteCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: QuoteChar cannot be same as end of line char: {0}</value>
+  </data>
+  <data name="FtMeta_ValidateEndOfLineTypeChar_SubstitutionCharCannotBeAnEndOfLineChar" xml:space="preserve">
+    <value>Invalid Meta: If substitutions are enabled, SubstitutionChar cannot be same as end of line char: {0}</value>
+  </data>
+  <data name="FtMeta_Validate_DelimiterCharAndSubstitutionCharMustBeDifferent" xml:space="preserve">
+    <value>Invalid Meta: DelimiterChar and SubstitutionChar must be different if substitutions</value>
+  </data>
+  <data name="FtMeta_Validate_DuplicateSequenceName" xml:space="preserve">
+    <value>Invalid Meta: Duplicate sequence name: "{0}"</value>
+  </data>
+  <data name="FtMeta_Validate_LineCommentCharAndDelimiterCharMustBeDifferent" xml:space="preserve">
+    <value>Invalid Meta: LineCommentChar and DelimiterChar must be different</value>
+  </data>
+  <data name="FtMeta_Validate_LineCommentCharAndSubstitutionCharMustBeDifferent" xml:space="preserve">
+    <value>Invalid Meta: LineCommentChar and SubstitutionChar must be different if substitutions</value>
+  </data>
+  <data name="FtMeta_Validate_MoreThanOneRootSequence" xml:space="preserve">
+    <value>Invalid Meta: More than one root sequence:  "{0}", "{1}"</value>
+  </data>
+  <data name="FtMeta_Validate_MustHaveAtLeastOneField" xml:space="preserve">
+    <value>Invalid Meta: Must have at least one field.</value>
+  </data>
+  <data name="FtMeta_Validate_QuoteCharAndDelimiterCharMustBeDifferent" xml:space="preserve">
+    <value>Invalid Meta: QuoteChar and DelimiterChar must be different.</value>
+  </data>
+  <data name="FtMeta_Validate_QuoteCharAndLineCommentCharMustBeDifferent" xml:space="preserve">
+    <value>Invalid Meta: QuoteChar and LineCommentChar must be different.</value>
+  </data>
+  <data name="FtMeta_Validate_QuoteCharAndSubstitutionCharMustBeDifferent" xml:space="preserve">
+    <value>Invalid Meta: QuoteChar and SubstitutionChar must be different if substitutions are enabled.</value>
+  </data>
+  <data name="DeclarationParser_FinishLine_DeclarationParameterMissingValue" xml:space="preserve">
+    <value>Declaration parameter missing value. Name: "{0}"</value>
+  </data>
+  <data name="DeclarationParser_FinishLine_DeclarationParameterNameNotTerminated" xml:space="preserve">
+    <value>Declaration parameter name not terminated: "{0}"</value>
+  </data>
+  <data name="DeclarationParser_FinishLine_DeclarationParameterValueNotTerminated" xml:space="preserve">
+    <value>Declaration parameter value not terminated. Name: "{0}"</value>
+  </data>
+  <data name="DeclarationParser_Finish_DeclaredParametersInvalidVersionValue" xml:space="preserve">
+    <value>Invalid version declaration parameter value: "{0}"</value>
+  </data>
+  <data name="DeclarationParser_Finish_DeclaredParametersMissingVersion" xml:space="preserve">
+    <value>Declaration missing version parameter</value>
+  </data>
+  <data name="DeclarationParser_Finish_DeclaredParametersVersionIsNotFirst" xml:space="preserve">
+    <value>Version declaration parameter is not first.</value>
+  </data>
+  <data name="DeclarationParser_ParseChar_DeclarationParameterNameIsZeroLength" xml:space="preserve">
+    <value>Zero length declaration parameter name.  Index: {0}</value>
+  </data>
+  <data name="DeclarationParser_ParseChar_DeclarationParameterValueNotQuoted" xml:space="preserve">
+    <value>Declaration parameter value is not quoted.  Name: "{0}"</value>
+  </data>
+  <data name="FieldedTextReadElement_ResolveLegacyIncompleteRecordsAllowed_Invalid" xml:space="preserve">
+    <value>Invalid legacy InvalidIncompleteRecordsAllowed "{0}"</value>
+  </data>
+  <data name="HeadingLineRecordParser_Finish_HeadingLineNotEnoughFields" xml:space="preserve">
+    <value>Heading line does not have enough fields.  Count: {0} Expected: {1}</value>
+  </data>
+  <data name="HeadingLineRecordParser_Finish_RecordNotEnoughFields" xml:space="preserve">
+    <value>Record does not have enough fields.  Count: {0} Expected: {1}</value>
+  </data>
+  <data name="FtField_SetNull_Constant" xml:space="preserve">
+    <value>Attempt to set null in constant field: "{0}"</value>
+  </data>
+  <data name="FtMeta_Validate_SequenceItemWithConstantFieldHasRedirects" xml:space="preserve">
+    <value>Sequence item with constant field has redirects.  Sequence name: "{0}" Item index: {1}</value>
+  </data>
+  <data name="FtMeta_Validate_SequenceItemWithNullField" xml:space="preserve">
+    <value>Sequence Item with null field.  Sequence name: "{0}" Item index: {1}</value>
+  </data>
+  <data name="FtGenericField_SetValue_Constant" xml:space="preserve">
+    <value>Attempt to set value in constant field: "{0}"</value>
+  </data>
+  <data name="FtDataReader_GetFloat_NotSupported" xml:space="preserve">
+    <value>DataReader.GetFloat not supported.</value>
+  </data>
+  <data name="FtDataReader_GetInt16_NotSupported" xml:space="preserve">
+    <value>DataReader.GetInt16 not supported.</value>
+  </data>
+  <data name="FtDataReader_GetInt32_NotSupported" xml:space="preserve">
+    <value>DataReader.GetInt32 not supported.</value>
+  </data>
+  <data name="SerializationReader_GetBoolean_InvalidCast" xml:space="preserve">
+    <value>GetBoolean cannot get value from field type: "{0}"</value>
+  </data>
+  <data name="SerializationReader_GetDateTime_InvalidCast" xml:space="preserve">
+    <value>GetDateTime cannot get value from field type: "{0}"</value>
+  </data>
+  <data name="SerializationReader_GetDecimal_InvalidCast" xml:space="preserve">
+    <value>GetDecimal cannot get value from field type: "{0}"</value>
+  </data>
+  <data name="SerializationReader_GetDouble_InvalidCast" xml:space="preserve">
+    <value>GetDouble cannot get value from field type: "{0}"</value>
+  </data>
+  <data name="SerializationReader_GetInt64_InvalidCast" xml:space="preserve">
+    <value>GetInt64 cannot get value from field type: "{0}"</value>
+  </data>
+  <data name="SerializationReader_GetString_InvalidCast" xml:space="preserve">
+    <value>GetString cannot get value from field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetBoolean_InvalidCast" xml:space="preserve">
+    <value>SetBoolean cannot set value for field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetDateTime_InvalidCast" xml:space="preserve">
+    <value>SetDateTime cannot set value for field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetDecimal_InvalidCast" xml:space="preserve">
+    <value>SetDecimal cannot set value for field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetDouble_InvalidCast" xml:space="preserve">
+    <value>SetDouble cannot set value for field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetInt64_InvalidCast" xml:space="preserve">
+    <value>SetInt64 cannot set value for field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetString_InvalidCast" xml:space="preserve">
+    <value>SetString cannot set value for field type: "{0}"</value>
+  </data>
+  <data name="SerializationWriter_SetValues_ValuesLengthExceededFieldCount" xml:space="preserve">
+    <value>Values length {0} exceeded field count {1}</value>
+  </data>
+  <data name="SerializationCore_GetOrdinal_IdNotFound" xml:space="preserve">
+    <value>Field not found. Id: {0}</value>
+  </data>
+  <data name="SerializationCore_GetOrdinal_NameNotFound" xml:space="preserve">
+    <value>Field not found: Name: {0}</value>
+  </data>
+</root>

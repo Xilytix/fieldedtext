@@ -1,0 +1,18 @@
+﻿~|!Fielded Text^| Version="1.1"
+~ MetaEmbedded="True"
+~ <?xml version="1.0" encoding="utf-8"?>
+~ <FieldedText LineCommentChar="~" HeadingLineCount="2">
+~   <Field Name="PetName" />
+~   <Field Name="Age" DataType="Float" />
+~   <Field Name="Color" />
+~   <Field Name="DateReceived" DataType="DateTime" Format="d MMM yyyy" />
+~   <Field Name="Price" DataType="Decimal" />
+~   <Field Name="NeedsWalking" DataType="Boolean" />
+~   <Field Name="Type" />
+~ </FieldedText>
+"Pet Name","Age","Color","Date Received","Price","Needs Walking","Type"
+"","(Years)","","","(Dollars)","",""
+Rover,4.5,Brown,12 Feb 2004,80,True,Dog
+Charlie,,Gold,5 Apr 2007,12.3,False,Fish
+Molly,2,Black,25 Dec 2006,25,False,Cat
+Gilly,,White,10 Apr 2007,10,False,Guinea Pig
