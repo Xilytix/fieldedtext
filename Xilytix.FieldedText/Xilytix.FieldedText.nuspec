@@ -12,12 +12,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Added
-  - SerializationCore.GetOrdinal(int fieldId) Finds field ordinal using field Id
-Fixed
-  - SerializationCore.GetOrdinal(string name) now throws exception if field not found.
-      Use SerializationCore.FieldList.IndexOfField() to return error instead of throwing
-      exception.
-  - FtMetaSerializer.Serialize(..., XmlWriterSettings) was ignoring XmlWriterSettings
+  - FtField.AsObject setter and FtWriter[fieldname] now attempt to cast value if
+      not matching type		
 
 Code examples can be viewed at:
   http://www.xilytix.com/fieldedtext/csharplibrary/examples</releaseNotes>

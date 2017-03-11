@@ -1204,6 +1204,15 @@ namespace Xilytix.FieldedText.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FtField not found. Name: &quot;{0}&quot;.
+        /// </summary>
+        internal static string FtFieldList_This_FtFieldNotFound {
+            get {
+                return ResourceManager.GetString("FtFieldList_This_FtFieldNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Null value in field: &quot;{0}&quot;.
         /// </summary>
         internal static string FtGenericField_GetValueOrThrowNull_AttemptToGetValueFromNullField {
@@ -1462,6 +1471,33 @@ namespace Xilytix.FieldedText.Properties {
         internal static string FtMetaField_ValidateEndOfLineTypeChar_ValueTruncateCharCannotBeAnEndOfLineChar {
             get {
                 return ResourceManager.GetString("FtMetaField_ValidateEndOfLineTypeChar_ValueTruncateCharCannotBeAnEndOfLineChar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FtMetaField not found. Name: &quot;{0}&quot;.
+        /// </summary>
+        internal static string FtMetaFieldList_This_FtMetaFieldNotFound {
+            get {
+                return ResourceManager.GetString("FtMetaFieldList_This_FtMetaFieldNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FtMetaSequence not found. Name: &quot;{0}&quot;.
+        /// </summary>
+        internal static string FtMetaSequenceList_This_FtMetaSequenceNotFound {
+            get {
+                return ResourceManager.GetString("FtMetaSequenceList_This_FtMetaSequenceNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FtSequence not found. Name: &quot;{0}&quot;.
+        /// </summary>
+        internal static string FtSequenceList_This_FtSquenceNotFound {
+            get {
+                return ResourceManager.GetString("FtSequenceList_This_FtSquenceNotFound", resourceCulture);
             }
         }
         

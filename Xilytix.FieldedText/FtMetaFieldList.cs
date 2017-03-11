@@ -108,7 +108,7 @@ namespace Xilytix.FieldedText
                 if (idx >= 0)
                     return list[idx];
                 else
-                    throw new IndexOutOfRangeException("FtMetaField not found. Name: \"" + name + "\"");
+                    throw new IndexOutOfRangeException(string.Format(Properties.Resources.FtMetaFieldList_This_FtMetaFieldNotFound, name));
             }
         }
 

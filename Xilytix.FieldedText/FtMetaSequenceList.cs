@@ -48,7 +48,7 @@ namespace Xilytix.FieldedText
                 if (idx >= 0)
                     return list[idx];
                 else
-                    throw new IndexOutOfRangeException("FtMetaSequence not found. Name: \"" + name + "\"");
+                    throw new IndexOutOfRangeException(string.Format(Properties.Resources.FtMetaSequenceList_This_FtMetaSequenceNotFound, name));
             }
         }
 

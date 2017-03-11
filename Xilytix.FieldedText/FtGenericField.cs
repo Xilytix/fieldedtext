@@ -82,7 +82,7 @@ namespace Xilytix.FieldedText
         protected override DateTime GetAsDateTime() { return (DateTime)Convert.ChangeType(value, typeof(DateTime)); }
         protected override decimal GetAsDecimal() { return (decimal)Convert.ChangeType(value, typeof(decimal)); }
 
-        protected override void SetAsNonNullObject(object newValue) { Value = (T)newValue; }
+        protected override void SetAsNonNullObject(object newValue) { Value = (T)Convert.ChangeType(newValue, typeof(T)); }
 
         protected override void SetAsNonNullString(string newValue) { Value = (T)Convert.ChangeType(newValue, typeof(T)); }
         protected override void SetAsBoolean(bool newValue) { Value = (T)Convert.ChangeType(newValue, typeof(T)); }

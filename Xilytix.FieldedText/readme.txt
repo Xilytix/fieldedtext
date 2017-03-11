@@ -4,6 +4,11 @@ Product Home Page: http://www.xilytix.com/fieldedtext/csharplibrary/index.html
 Code examples: http://www.xilytix.com/fieldedtext/csharplibrary/examples
 
 Version History
+1.0.5	11 Mar 2017 Added
+                      - FtField.AsObject setter and FtWriter[fieldname] now
+                          attempt to cast value if not matching type		
+                    Fixed
+                      - Minor disposal issues fixed
 1.0.4	13 Nov 2016 Added
                       - SerializationCore.GetOrdinal(int fieldId)
                           Finds field ordinal using field Id

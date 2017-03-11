@@ -20,12 +20,22 @@ namespace Xilytix.FieldedText
         }
         public static FtMeta Deserialize(string metaFilePath)
         {
-            using (StreamReader streamReader = new StreamReader(metaFilePath))
+            StreamReader streamReader = null;
+            try
             {
+                streamReader = new StreamReader(metaFilePath);
                 using (XmlReader xmlReader = XmlReader.Create(streamReader))
                 {
+                    streamReader = null;
                     XmlMetaSerializationReader serializationReader = new XmlMetaSerializationReader();
                     return serializationReader.Read(xmlReader);
+                }
+            }
+            finally
+            {
+                if (streamReader != null)
+                {
+                    streamReader.Dispose();
                 }
             }
         }
@@ -36,12 +46,22 @@ namespace Xilytix.FieldedText
         }
         public static void Serialize(FtMeta meta, string outputFilePath)
         {
-            using (StreamWriter streamWriter = new StreamWriter(outputFilePath))
+            StreamWriter streamWriter = null;
+            try
             {
+                streamWriter = new StreamWriter(outputFilePath);
                 using (XmlWriter xmlWriter = XmlWriter.Create(streamWriter))
                 {
+                    streamWriter = null;
                     XmlMetaSerializationWriter serializationWriter = new XmlMetaSerializationWriter();
                     serializationWriter.Write(xmlWriter, meta);
+                }
+            }
+            finally
+            {
+                if (streamWriter != null)
+                {
+                    streamWriter.Dispose();
                 }
             }
         }

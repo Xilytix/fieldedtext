@@ -177,6 +177,17 @@ namespace Xilytix.FieldedText.UnitTest
                         }
                         if (recArray[i].Age.HasValue)
                         {
+                            // test assigning to AsObject as Single
+                            Single ageAsSingle = (Single)(recArray[i].Age.Value);
+                            ageField.AsObject = ageAsSingle;
+                            Assert.AreEqual<Single>(ageAsSingle, (Single)ageField.Value);
+
+                            // test assigning to AsObject as Decimal
+                            Decimal ageAsDecimal = (Decimal)(recArray[i].Age.Value);
+                            ageField.AsObject = ageAsDecimal;
+                            Assert.AreEqual<Decimal>(ageAsDecimal, (Decimal)ageField.Value);
+
+                            // assign as Double
                             ageField.Value = recArray[i].Age.Value;
                         }
                         if (recArray[i].Color != null)
@@ -189,6 +200,17 @@ namespace Xilytix.FieldedText.UnitTest
                         }
                         if (recArray[i].Price.HasValue)
                         {
+                            // test assigning to AsObject as Single
+                            Single priceAsSingle = (Single)(recArray[i].Price.Value);
+                            priceField.AsObject = priceAsSingle;
+                            Assert.AreEqual<Single>(priceAsSingle, (Single)priceField.Value);
+
+                            // test assigning to AsObject as Double
+                            Double priceAsDouble = (Double)(recArray[i].Price.Value);
+                            priceField.AsObject = priceAsDouble;
+                            Assert.AreEqual<Double>(priceAsDouble, (Double)priceField.Value);
+
+                            // assign as Decimal
                             priceField.Value = recArray[i].Price.Value;
                         }
                         if (recArray[i].NeedsWalking.HasValue)
@@ -212,7 +234,20 @@ namespace Xilytix.FieldedText.UnitTest
                         if (!recArray[i].Age.HasValue)
                             writer.SetNull(i);
                         else
+                        {
+                            // test assigning to AsObject as Single
+                            Single ageAsSingle = (Single)recArray[i].Age.Value;
+                            writer[ageMetaField.Name] = ageAsSingle;
+                            Assert.AreEqual<Single>(ageAsSingle, (Single)ageField.Value);
+
+                            // test assigning to AsObject as Decimal
+                            Decimal ageAsDecimal = (Decimal)(recArray[i].Age.Value);
+                            writer[ageMetaField.Name] = ageAsDecimal;
+                            Assert.AreEqual<Decimal>(ageAsDecimal, (Decimal)ageField.Value);
+
+                            // assign as Double
                             writer.SetDouble(ageFieldIndex, recArray[i].Age.Value);
+                        }
                         if (recArray[i].Color == null)
                             writer.SetNull(i);
                         else
@@ -224,7 +259,20 @@ namespace Xilytix.FieldedText.UnitTest
                         if (!recArray[i].Price.HasValue)
                             writer.SetNull(i);
                         else
+                        {
+                            // test assigning to AsObject as Single
+                            Single priceAsSingle = (Single)(recArray[i].Price.Value);
+                            writer[priceField.Name] = priceAsSingle;
+                            Assert.AreEqual<Single>(priceAsSingle, (Single)priceField.Value);
+
+                            // test assigning to AsObject as Double
+                            Double priceAsDouble = (Double)(recArray[i].Price.Value);
+                            writer[priceField.Name] = priceAsDouble;
+                            Assert.AreEqual<Double>(priceAsDouble, (Double)priceField.Value);
+
+                            // assign as Decimal
                             writer.SetDecimal(priceFieldIndex, recArray[i].Price.Value);
+                        }
                         if (!recArray[i].NeedsWalking.HasValue)
                             writer.SetNull(i);
                         else
@@ -246,7 +294,20 @@ namespace Xilytix.FieldedText.UnitTest
                         if (!recArray[i].Age.HasValue)
                             writer[ageMetaField.Name] = null;
                         else
+                        {
+                            // test assigning to AsObject as Single
+                            Single ageAsSingle = (Single)recArray[i].Age.Value;
+                            writer[ageMetaField.Name] = ageAsSingle;
+                            Assert.AreEqual<Single>(ageAsSingle, (Single)ageField.Value);
+
+                            // test assigning to AsObject as Decimal
+                            Decimal ageAsDecimal = (Decimal)(recArray[i].Age.Value);
+                            writer[ageMetaField.Name] = ageAsDecimal;
+                            Assert.AreEqual<Decimal>(ageAsDecimal, (Decimal)ageField.Value);
+
+                            // assign as Double
                             writer[ageMetaField.Name] = recArray[i].Age.Value;
+                        }
                         if (recArray[i].Color == null)
                             writer[colorMetaField.Name] = null;
                         else
@@ -258,7 +319,20 @@ namespace Xilytix.FieldedText.UnitTest
                         if (!recArray[i].Price.HasValue)
                             writer[priceMetaField.Name] = null;
                         else
+                        {
+                            // test assigning to AsObject as Single
+                            Single priceAsSingle = (Single)(recArray[i].Price.Value);
+                            writer[priceField.Name] = priceAsSingle;
+                            Assert.AreEqual<Single>(priceAsSingle, (Single)priceField.Value);
+
+                            // test assigning to AsObject as Double
+                            Double priceAsDouble = (Double)(recArray[i].Price.Value);
+                            writer[priceField.Name] = priceAsDouble;
+                            Assert.AreEqual<Double>(priceAsDouble, (Double)priceField.Value);
+
+                            // assign as Decimal
                             writer[priceMetaField.Name] = recArray[i].Price.Value;
+                        }
                         if (!recArray[i].NeedsWalking.HasValue)
                             writer[needsWalkingMetaField.Name] = null;
                         else

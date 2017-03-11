@@ -26,7 +26,7 @@ namespace Xilytix.FieldedText
                 if (idx >= 0)
                     return list[idx];
                 else
-                    throw new IndexOutOfRangeException("FtSequence not found. Name: \"" + name + "\"");
+                    throw new IndexOutOfRangeException(string.Format(Properties.Resources.FtSequenceList_This_FtSquenceNotFound, name));
             }
         }
 

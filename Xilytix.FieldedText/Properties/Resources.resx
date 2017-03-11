@@ -819,4 +819,16 @@
   <data name="SerializationCore_GetOrdinal_NameNotFound" xml:space="preserve">
     <value>Field not found: Name: {0}</value>
   </data>
+  <data name="FtFieldList_This_FtFieldNotFound" xml:space="preserve">
+    <value>FtField not found. Name: "{0}"</value>
+  </data>
+  <data name="FtMetaFieldList_This_FtMetaFieldNotFound" xml:space="preserve">
+    <value>FtMetaField not found. Name: "{0}"</value>
+  </data>
+  <data name="FtMetaSequenceList_This_FtMetaSequenceNotFound" xml:space="preserve">
+    <value>FtMetaSequence not found. Name: "{0}"</value>
+  </data>
+  <data name="FtSequenceList_This_FtSquenceNotFound" xml:space="preserve">
+    <value>FtSequence not found. Name: "{0}"</value>
+  </data>
 </root>
