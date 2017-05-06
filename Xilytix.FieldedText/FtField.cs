@@ -214,7 +214,7 @@ namespace Xilytix.FieldedText
             }
             catch (FtSerializationException E)
             {
-                throw new FtSerializationException(E.Error, this, string.Format(Properties.Resources.FtField_SetAsNonNullValueText_Prefix, E.Message), E.InnerException);
+                throw new FtSerializationException(E.Error, this, string.Format(Properties.Resources.FtField_SetAsNonNullValueText_Prefix, E.Message), E);
             }
         }
 
@@ -396,7 +396,7 @@ namespace Xilytix.FieldedText
                 }
                 catch (FtSerializationException E)
                 {
-                    throw new FtSerializationException(E.Error, this, string.Format(Properties.Resources.FtField_LoadFixedWidthValue_Prefix, E.Message), E.InnerException);
+                    throw new FtSerializationException(E.Error, this, string.Format(Properties.Resources.FtField_LoadFixedWidthValue_Prefix, E.Message), E);
                 }
             }
         }
@@ -443,7 +443,7 @@ namespace Xilytix.FieldedText
             }
             catch (FtSerializationException E)
             {
-                throw new FtSerializationException(E.Error, this, string.Format(Properties.Resources.FtField_LoadDelimitedValue_Prefix, E.Message), E.InnerException);
+                throw new FtSerializationException(E.Error, this, string.Format(Properties.Resources.FtField_LoadDelimitedValue_Prefix, E.Message), E);
             }
         }
 

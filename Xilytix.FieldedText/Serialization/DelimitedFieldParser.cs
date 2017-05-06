@@ -311,14 +311,14 @@ namespace Xilytix.FieldedText.Serialization
 
         internal void LoadFieldHeading(int headingLineIndex)
         {
-            string headingText = FinishText(); ;
+            string headingText = FinishText(); 
             field.LoadPosition(position, (int)(charReader.Position - position), rawOffset, rawLength);
             field.LoadHeading(headingLineIndex, headingText);
         }
 
         internal void LoadFieldValue()
         {
-            string valueText = FinishText(); ;
+            string valueText = FinishText(); 
             field.LoadPosition(position, (int)(charReader.Position - position), rawOffset, rawLength);
             field.LoadDelimitedValue(valueText, quotedState == QuotedState.Closed);
         }

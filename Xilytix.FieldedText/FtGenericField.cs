@@ -68,7 +68,7 @@ namespace Xilytix.FieldedText
             }
             catch (FtSerializationException inner)
             {
-                throw new FtSerializationException(inner.Error, this, inner.Message, inner.InnerException);
+                throw new FtSerializationException(inner.Error, this, inner.Message, inner);
             }
         }
 
