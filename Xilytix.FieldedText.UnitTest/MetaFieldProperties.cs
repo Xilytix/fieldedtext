@@ -6,6 +6,7 @@
 namespace Xilytix.FieldedText.UnitTest
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using FieldedText;
 
     internal struct MetaFieldProperties
     {

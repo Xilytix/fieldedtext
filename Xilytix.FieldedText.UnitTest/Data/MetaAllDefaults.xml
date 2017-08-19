@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldedText>
+  <Substitution Token="x" Value="yyy" />
+  <Field Name="StringField" />
+  <Field Name="BooleanField" DataType="Boolean" />
+  <Field Name="IntegerField" DataType="Integer" />
+  <Field Name="FloatField" DataType="Float" />
+  <Field Name="DecimalField" DataType="Decimal" />
+  <Field Name="DateTimeField" DataType="DateTime" />
+  <Field Name="RedirectStringField1" />
+  <Field Name="RedirectBooleanField2" DataType="Boolean" />
+  <Field Name="RedirectIntegerField3" DataType="Integer" />
+  <Field Name="RedirectFloatField4" DataType="Float" />
+  <Field Name="RedirectDecimalField5" DataType="Decimal" />
+  <Field Name="RedirectDateTimeField6" DataType="DateTime" />
+  <Sequence Name="Root" Root="True">
+    <Item FieldIndex="0">
+      <Redirect SequenceName="RedirectTarget" Value="" />
+    </Item>
+    <Item FieldIndex="1">
+      <Redirect SequenceName="RedirectTarget" Value="False" />
+    </Item>
+    <Item FieldIndex="2">
+      <Redirect SequenceName="RedirectTarget" Value="0" />
+    </Item>
+    <Item FieldIndex="3">
+      <Redirect SequenceName="RedirectTarget" Value="0" />
+    </Item>
+    <Item FieldIndex="4">
+      <Redirect SequenceName="RedirectTarget" Value="0" />
+    </Item>
+    <Item FieldIndex="5">
+      <Redirect SequenceName="RedirectTarget" Value="00010101" />
+    </Item>
+  </Sequence>
+  <Sequence Name="RedirectTarget" FieldIndices="10,11">
+    <Item FieldIndex="6" />
+    <Item FieldIndex="7">
+      <Redirect SequenceName="Root" Type="Null" />
+    </Item>
+    <Item FieldIndex="8" />
+    <Item FieldIndex="9">
+      <Redirect SequenceName="Root" Type="Null" />
+    </Item>
+  </Sequence>
+</FieldedText>

@@ -10,6 +10,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Xilytix.FieldedText.UnitTest
 {
+    using FieldedText;
+
     [TestClass]
     public class MetaAllDefaultsTestClass : BaseTestClass
     {

@@ -4,6 +4,8 @@ Product Home Page: http://www.xilytix.com/fieldedtext/csharplibrary/index.html
 Code examples: http://www.xilytix.com/fieldedtext/csharplibrary/examples
 
 Version History
+1.0.6	20 Aug 2017 Added
+                      - Converted to .NET Standard 2.0
 1.0.5	11 Mar 2017 Added
                       - FtField.AsObject setter and FtWriter[fieldname] now
                           attempt to cast value if not matching type		
